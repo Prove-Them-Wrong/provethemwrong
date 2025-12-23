@@ -1,0 +1,6 @@
+# Prove Them Wrong - provethemwrong.now
+User-agent: *
+Allow: /
+
+Sitemap: https://provethemwrong.now/sitemap.xml
+Crawl-delay: 1
