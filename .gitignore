@@ -1,0 +1,7 @@
+plans/component-architecture.md
+.kilocode/
+.vscode/
+.serena
+node_modules/
+.DS_Store
+.kilocodemodes
