@@ -1,22 +1,11 @@
 {
   "cleanUrls": true,
   "trailingSlash": false,
-  "routes": [
-    { "src": "^/$", "dest": "/pages/index.html" },
-    { "src": "^/about$", "dest": "/pages/about.html" },
-    { "src": "^/academy$", "dest": "/pages/academy.html" },
-    { "src": "^/labs$", "dest": "/pages/labs.html" },
-    { "src": "^/team$", "dest": "/pages/team.html" }
-  ],
-  "headers": [
-    {
-      "source": "/(.*)",
-      "headers": [
-        { "key": "X-Content-Type-Options", "value": "nosniff" },
-        { "key": "X-Frame-Options", "value": "DENY" },
-        { "key": "X-XSS-Protection", "value": "1; mode=block" },
-        { "key": "Referrer-Policy", "value": "strict-origin-when-cross-origin" }
-      ]
-    }
+  "rewrites": [
+    { "source": "/", "destination": "/pages/index.html" },
+    { "source": "/about", "destination": "/pages/about.html" },
+    { "source": "/academy", "destination": "/pages/academy.html" },
+    { "source": "/labs", "destination": "/pages/labs.html" },
+    { "source": "/team", "destination": "/pages/team.html" }
   ]
 }
