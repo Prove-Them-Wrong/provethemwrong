@@ -1,15 +1,9 @@
 {
   "cleanUrls": true,
   "trailingSlash": false,
-  "rewrites": [
-    { "source": "/", "destination": "/pages/index.html" },
-    { "source": "/about", "destination": "/pages/about.html" },
-    { "source": "/academy", "destination": "/pages/academy.html" },
-    { "source": "/labs", "destination": "/pages/labs.html" },
-    { "source": "/team", "destination": "/pages/team.html" }
-  ],
   "headers": [
     {
+      "source": "/(.*)",
       "headers": [
         { "key": "X-Content-Type-Options", "value": "nosniff" },
         { "key": "X-Frame-Options", "value": "DENY" },
