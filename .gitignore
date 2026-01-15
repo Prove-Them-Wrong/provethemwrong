@@ -5,3 +5,5 @@ plans/component-architecture.md
 node_modules/
 .DS_Store
 .kilocodemodes
+.vercel
+.env*.local
